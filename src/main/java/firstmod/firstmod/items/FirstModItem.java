@@ -18,6 +18,7 @@ public abstract class FirstModItem extends Item
         ItemGroupEvents.modifyEntriesEvent(FirstModItemGroups.FIRST_MOD_ITEM_GROUP)
                 .register((itemGroup) ->
                 itemGroup.add(new ItemStack(this)));
+
     }
 
 }

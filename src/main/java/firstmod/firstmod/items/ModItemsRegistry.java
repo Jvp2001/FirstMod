@@ -7,12 +7,12 @@ import net.minecraft.util.Identifier;
 
 public class ModItemsRegistry
 {
-    public static FirstItem RUBY_GEM = new FirstItem(new FabricItemSettings());
+    public static RubyItem RUBY = new RubyItem(new FabricItemSettings());
 
     public static void registerItems()
     {
         // Register items here
-        Registry.register(Registries.ITEM, new Identifier("firstmod", "first_item"), RUBY_GEM);
+        Registry.register(Registries.ITEM, new Identifier("firstmod", "ruby"), RUBY);
 
     }
 }

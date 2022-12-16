@@ -10,7 +10,7 @@ public class FirstModItemGroups
 {
     public static final ItemGroup FIRST_MOD_ITEM_GROUP = FabricItemGroup.builder(
             new Identifier("firstmod", "first_mod_item_group")).
-            icon(() -> new ItemStack(ModItemsRegistry.RUBY_GEM)).build();
+            icon(() -> new ItemStack(ModItemsRegistry.RUBY)).build();
 
     public static void registerItemGroups()
     {

@@ -1,16 +1,15 @@
 package firstmod.firstmod.items;
 
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
-public class FirstItem extends FirstModItem
+public class RubyItem extends FirstModItem
 {
-    public FirstItem(Settings settings)
+    public RubyItem(Settings settings)
     {
         super(settings.fireproof().maxCount(16));
     }
