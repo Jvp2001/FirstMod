@@ -1,21 +1,20 @@
 package firstmod.firstmod.blocks;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.BlockState;
+import net.minecraft.block.Block;
 import net.minecraft.block.Material;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
-import net.minecraft.util.hit.BlockHitResult;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
 
-public class GemBlock extends FirstModBlock
+public class GemBlock
 {
-    public GemBlock()
+    public static final FirstModBlockSettings DEFAULT_SETTINGS = new FirstModBlockSettings(FabricBlockSettings.of(Material.METAL).strength(5.0f, 4.0f).sounds(BlockSoundGroup.METAL));
+    public static FabricBlockSettings CreateBlockSettings(float hardness, float resistance)
     {
-        super(FabricBlockSettings.of(Material.METAL).hardness(5.0f).sounds(BlockSoundGroup.METAL).requiresTool());
-
+        return FabricBlockSettings.of(Material.METAL)
+                .hardness(hardness)
+                .sounds(BlockSoundGroup.METAL)
+                .resistance(resistance)
+                .requiresTool();
     }
+
 }
