@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "firstmod",
   "version": "${version}",
-  "name": "Firstmod",
+  "name": "FirstMod",
   "description": "",
   "authors": [],
   "contact": {},
@@ -12,6 +12,9 @@
   "entrypoints": {
     "client": [
       "firstmod.firstmod.client.FirstModClient"
+    ],
+    "fabric-datagen": [
+      "firstmod.firstmod.datagen.FirstModDataGen"
     ],
     "main": [
       "firstmod.firstmod.FirstMod"
